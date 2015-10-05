@@ -62,6 +62,7 @@ public class Main {
 	}
 
 	void baixar(String url) {
+		url = url.substring(0, 43);
 		msg("* baixar " + url + "\n");
 		downloadButton.setEnabled(false);
 		animacao.setText("Baixando arquivo...");
